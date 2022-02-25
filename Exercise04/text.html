@@ -1,0 +1,65 @@
+<!--
+    Title: Module04 Intro to Web Languages Exercise #4
+    Author: Wendy Dushanin
+    UNCC Student ID: 800727084
+    Date: February 25, 2022
+    Class: ITSC 3155 Software Engineering
+    Semester: Spring 2022
+    -->
+
+<!--Assignment Description: 
+Create an HTML page with 4 paragraphs of text. The actual text can be anything 
+(hint: in VSCode, when editing HTML, type "lorem-50" then hit tab to generate 50 random 
+latin words as placeholder text). Make the background color of the first and third paragraph 
+blue and the second and fourth paragraph green. Make the text color of all paragraphs white so 
+you can read it. Use embedded CSS for the styling and classes to control which paragraphs get which style.
+-->
+
+<!--References: 
+    https://www.w3schools.com/css/css_howto.asp
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text</title>
+
+    <style>
+        p {
+            color: white;
+        }
+
+        .para-blue {
+            background-color: blue;
+        }
+
+        .para-green {
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <p class="para-blue">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum pariatur quod, eum earum ex quae 
+        laudantium similique. Dolore eius esse quos ut neque cumque similique vel excepturi dolorem. Nobis 
+        molestiae nemo veritatis laudantium debitis distinctio, placeat ullam quos aliquid repudiandae harum 
+        hic odit dolorum nulla quod quasi.</p>
+
+    <p class="para-green">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum pariatur quod, eum earum ex quae 
+        laudantium similique. Dolore eius esse quos ut neque cumque similique vel excepturi dolorem. Nobis 
+        molestiae nemo veritatis laudantium debitis distinctio, placeat ullam quos aliquid repudiandae harum 
+        hic odit dolorum nulla quod quasi.</p>
+
+    <p class="para-blue">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum pariatur quod, eum earum ex quae 
+        laudantium similique. Dolore eius esse quos ut neque cumque similique vel excepturi dolorem. Nobis 
+        molestiae nemo veritatis laudantium debitis distinctio, placeat ullam quos aliquid repudiandae harum 
+        hic odit dolorum nulla quod quasi.</p>
+
+    <p class="para-green">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum pariatur quod, eum earum ex quae 
+        laudantium similique. Dolore eius esse quos ut neque cumque similique vel excepturi dolorem. Nobis 
+        molestiae nemo veritatis laudantium debitis distinctio, placeat ullam quos aliquid repudiandae harum 
+        hic odit dolorum nulla quod quasi.</p>
+</body>
+</html>
