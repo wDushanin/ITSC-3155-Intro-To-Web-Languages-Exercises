@@ -1,0 +1,74 @@
+<!--
+    Title: Module04 Intro to Web Languages Exercise #7
+    Author: Wendy Dushanin
+    UNCC Student ID: 800727084
+    Date: February 25, 2022
+    Class: ITSC 3155 Software Engineering
+    Semester: Spring 2022
+    -->
+
+<!--Assignment Description: 
+    Create an index.html page and copy in the following HTML and JavaScript code into the body tag. Launch the 
+    page and observe the page behavior. Now, go through the JavaScript code and add a comment above every line, 
+    explaining in your own words what it does to the best of your ability. It is alright if you are not completely
+    correct, you will still get credit if we see that you have made a good attempt.
+-->
+
+<!--References: 
+    https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+    https://www.geeksforgeeks.org/javascript-addeventlistener-with-examples/#:~:text=The%20addEventListener()%20is%20an,without%20overwriting%20existing%20event%20handlers.
+    
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="name-input" type="text" placeholder="Enter your name" />
+    <button id="my-button">Click Me</button>
+
+    <script>
+        // creates a variable that works with the id "my-button", which references the "Click Me" button
+        //
+        //  From Google: "The Document method querySelector() returns the first ELEMENT within
+        //  the document that matches the specified selector, or group of selectors.  If no 
+        //  matches are found, null is returned"
+        var myButton = document.querySelector('#my-button');
+
+        // creates a variable that works with the id "name-input"
+        //
+        //  From Google: "The Document method querySelector() returns the first ELEMENT within
+        //  the document that matches the specified selector, or group of selectors.  If no 
+        //  matches are found, null is returned"
+        var nameInput = document.querySelector('#name-input');
+        
+
+        //  the variable 'myButton' is called on, resulting in the following function happening when the 
+        //  "Click Me" button is clicked
+        //  Here the first paramater (the event) is click, which calles the second parameter (the listener) the 
+        //  following function code
+        //
+        //  From Google: "The addEventListener() is an inbuilt function in JavaScript which takes the event 
+        //  to listen for, and a second argument to be called whenever the described event gets fired. Any 
+        //  number of event handlers can be added to a single element without overwriting existing event handlers." 
+        myButton.addEventListener('click', function () {
+
+            // here, if any text is entered into the "text input" with the name-input ID (which is referenced by 
+            // the variable nameInput)
+            if (nameInput.value !== '') {
+
+                //Then an alert pops up on the screen with a message from the server stating: 
+                //"Hello + The entered text"
+                alert('Hello ' + nameInput.value);
+            }
+        });
+    </script>
+
+</body>
+</html>
